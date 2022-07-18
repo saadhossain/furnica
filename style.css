@@ -44,6 +44,10 @@ header {
 .menu .fa-solid {
     font-size: 25px;
     color: #424242;
+    transition: 0.3s all ease-in-out;
+}
+.menu .fa-solid:hover{
+    color: #FB6B3D;
 }
 
 /*--------------------
@@ -230,7 +234,7 @@ Media queires
     }
 
     .carousel-info {
-        padding-left: 10px;
+        padding-left: 20px;
     }
 
     .carousel-info h1 {

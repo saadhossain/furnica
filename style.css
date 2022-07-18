@@ -1,178 +1,301 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* Common Styles */
-body{
+body {
     font-family: 'Poppins', sans-serif;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
-main{
+
+main {
     display: flex;
     /* justify-content: center; */
     flex-direction: column;
     align-items: center;
 }
 
-.container{
+.container {
     width: 960px;
 }
+
 /* Header Styling */
-header{
+header {
     display: flex;
     justify-content: center;
     padding: 10px;
     background-color: #ffe1b9;
 }
-.menu{
+
+.menu {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.menu li{
+
+.menu li {
     list-style: none;
 }
-.menu img{
+
+.menu img {
     width: 32px;
-    height:32px;
+    height: 32px;
 }
-.menu .fa-solid{
+
+.menu .fa-solid {
     font-size: 25px;
-    color:#424242;
+    color: #424242;
 }
+
 /*--------------------
 Carousel Section Style
 ----------------------*/
 
-.carousel{
+.carousel {
     background-color: #E7E7E7;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
-    margin-top:20px;
+    margin-top: 20px;
 }
-.carousel-info, .carousel-img{
+
+.carousel-info,
+.carousel-img {
     width: 50%;
 }
-.carousel-info{
-    padding-left:20px;
+
+.carousel-info {
+    padding-left: 20px;
 }
-.carousel-info h1{
+
+.carousel-info h1 {
     font-size: 100px;
     line-height: 0.5em;
 }
-.carousel-info h2{
+
+.carousel-info h2 {
     font-size: 50px;
     line-height: 0.5em;
 }
-.carousel-info p{
+
+.carousel-info p {
     font-size: 20px;
 }
+
 /*--------------------
 Category Section Style
 ----------------------*/
-.all-category{
+.all-category {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px 40px;
 }
-.category{
+
+.category {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.category img{
+
+.category img {
     height: 60px;
     width: 60px;
     background-color: #ECECEC;
-    padding:20px;
+    padding: 20px;
     border-radius: 50%;
 }
+
 /*--------------------
 Popular Product Section Style
 ----------------------*/
 
 /* Product Tags Style */
-.poplular-tags{
+.poplular-tags {
     display: flex;
 }
-.poplular-tags li{
+
+.poplular-tags li {
     list-style: none;
 }
-.poplular-tags a{
+
+.poplular-tags a {
     text-decoration: none;
     margin-right: 20px;
-    border:3px solid #0F0F0F;
+    border: 3px solid #0F0F0F;
     border-radius: 30px;
-    padding:10px 30px;
+    padding: 10px 30px;
     font-size: 18px;
     font-weight: 700;
-    color:#0F0F0F;
+    color: #0F0F0F;
     transition: 0.5s all ease-in-out;
 }
-.poplular-tags .active a{
+
+.poplular-tags .active a {
     background-color: #0F0F0F;
-    color:#fff;
+    color: #fff;
 }
-.poplular-tags a:hover{
+
+.poplular-tags a:hover {
     background-color: #0F0F0F;
-    color:#fff;
+    color: #fff;
 }
 
 /* Popular Product style */
-.popular-products{
+.popular-products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px 40px;
-    margin:30px 0px;
+    margin: 30px 0px;
 }
-.product{
+
+.product {
     background-color: #F3F3F3;
     border-radius: 30px;
-    padding:0px 10px;
+    padding: 0px 10px;
 }
-.product-img img{
+
+.product-img img {
     width: 100%;
 }
+
 /* product title and pricing style */
-.product-tittle{
+.product-tittle {
     font-size: 20px;
     line-height: 0.5em;
 }
-.product-price{
+
+.product-price {
     font-size: 30px;
-    color:brown;
-    margin-top:10px;
+    color: brown;
+    margin-top: 10px;
     line-height: 0.5em;
 }
-.product-status{
+
+.product-status {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.sold{
+
+.sold {
     background-color: #ffbd99;
-    padding:5px 10px;
+    padding: 5px 10px;
     border-radius: 5px;
     font-size: 15px;
 }
+
 /*--------------------
 Footer Section Style
 ----------------------*/
-footer{
+footer {
     background-color: #ffe1b9;
     text-align: center;
-    padding:5px 0px;
-    color:#10181a;
+    padding: 5px 0px;
+    color: #10181a;
 }
-.footer-content{
+
+.footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.footer-content img{
+
+.footer-content img {
     height: 40px;
     width: 40;
 }
-footer>hr{
-    border:1px solid #424242;
+
+footer>hr {
+    border: 1px solid #424242;
+}
+
+/*----------------------
+Media queires
+-----------------------*/
+@media screen and (max-width:576px) {
+    .container {
+        max-width: 100%;
+    }
+
+    /* Carousel Responsive */
+    .carousel {
+        flex-direction: column;
+        border-radius: 0px;
+        margin-top: 0px;
+        align-items: center;
+    }
+
+    .carousel-info,
+    .carousel-img {
+        width: 100%;
+    }
+
+    .carousel-info {
+        padding-left: 10px;
+    }
+
+    .carousel-info h1 {
+        font-size: 70px;
+        line-height: 0.5em;
+    }
+
+    .carousel-info h2 {
+        font-size: 30px;
+        line-height: 0.5em;
+    }
+
+    .carousel-img img {
+        width: 50%;
+    }
+
+    /*Category Responsive*/
+    .all-category {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px 10px;
+    }
+
+    .category img {
+        height: 50px;
+        width: 50px;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    /* Product Tags Responsive */
+    .poplular-tags {
+        flex-wrap: wrap;
+        margin-left: 10px;
+    }
+
+    .poplular-tags li {
+        margin-bottom: 20px;
+    }
+
+    .poplular-tags a {
+        margin-right: 10px;
+        border-radius: 20px;
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+    /* Popular Product Responsive */
+    .popular-products {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 30px 20px;
+    }
+
+    .product {
+        background-color: #F3F3F3;
+        border-radius: 30px;
+        padding: 0px 10px;
+    }
+
+    .product-img img {
+        width: 80%;
+    }
+
+    /* product title and pricing style */
+    .product-price {
+        font-size: 25px;
+    }
+
 }

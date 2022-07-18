@@ -128,3 +128,20 @@ Popular Product Section Style
     border-radius: 5px;
     font-size: 15px;
 }
+/*--------------------
+Footer Section Style
+----------------------*/
+footer{
+    background-color: antiquewhite;
+    text-align: center;
+    padding:5px 100px;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content img{
+    height: 40px;
+    width: 40;
+}

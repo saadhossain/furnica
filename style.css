@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Common Styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+}
+main{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 960px;
+}
+.carousel{
+    background-color: #E7E7E7;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.carousel-info, .carousel-img{
+    width: 50%;
+}
+.carousel-info{
+    padding-left:20px;
+}
+.carousel-info h1{
+    font-size: 100px;
+    line-height: 0.5em;
+}
+.carousel-info h2{
+    font-size: 50px;
+    line-height: 0.5em;
+}
+.carousel-info p{
+    font-size: 20px;
+}

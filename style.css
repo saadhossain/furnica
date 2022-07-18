@@ -7,14 +7,19 @@ body{
     padding:0;
 }
 main{
-    
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
 }
 
 .container{
     width: 960px;
 }
+/*--------------------
+Carousel Section Style
+----------------------*/
+
 .carousel{
     background-color: #E7E7E7;
     border-radius: 20px;
@@ -37,4 +42,24 @@ main{
 }
 .carousel-info p{
     font-size: 20px;
+}
+/*--------------------
+Category Section Style
+----------------------*/
+.all-category{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px 40px;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.category img{
+    height: 60px;
+    width: 60px;
+    background-color: #ECECEC;
+    padding:20px;
+    border-radius: 50%;
 }

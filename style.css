@@ -63,3 +63,68 @@ Category Section Style
     padding:20px;
     border-radius: 50%;
 }
+/*--------------------
+Popular Product Section Style
+----------------------*/
+
+/* Product Tags Style */
+.poplular-tags{
+    display: flex;
+}
+.poplular-tags li{
+    list-style: none;
+}
+.poplular-tags a{
+    text-decoration: none;
+    margin-right: 20px;
+    border:3px solid #0F0F0F;
+    border-radius: 30px;
+    padding:10px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color:#0F0F0F;
+    transition: 0.5s all ease-in-out;
+}
+.poplular-tags .active a{
+    background-color: #0F0F0F;
+    color:#fff;
+}
+.poplular-tags a:hover{
+    background-color: #0F0F0F;
+    color:#fff;
+}
+
+/* Popular Product style */
+.popular-products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 40px;
+    margin:30px 0px;
+}
+.product{
+    background-color: #F3F3F3;
+    border-radius: 30px;
+    padding:0px 10px;
+}
+.product-img img{
+    width: 100%;
+}
+/* product title and pricing style */
+.product-tittle{
+    font-size: 20px;
+}
+.product-price{
+    font-size: 30px;
+    color:brown;
+}
+.product-status{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sold{
+    background-color: #ffbd99;
+    padding:5px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
